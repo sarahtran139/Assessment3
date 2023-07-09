@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+	<nav>
+		<ol>
+	        <li class="crumb"><a href="./home.html">Home</a></li>
+	        <li class="crumb"><a href="./profile.html">Profile</a></li>
+	        <li class="crumb"><a href="./about.html">About</a></li>
+	    </ol>
+	</nav>
+
+	<content>
+		<h1>Welcome to this little website.</h1>
+		<p>Hello World</p>
+		<p>We hope this little duck will make you smile. Lets smile, we are here to help you find what you need</p>
+		<ul>
+			<li>You are unique</li>
+			<li>You are special</li>
+			<li>You are the one and the only one</li>
+		</ul>
+
+		<img src="https://as1.ftcdn.net/v2/jpg/01/41/75/20/1000_F_141752035_rWsc5F8eKJKalxPfKDN0VQLC9x3k13ui.jpg">
+
+		<h2>Contact Us</h2>
+		<form id="contact">
+			Your name:
+			<input type="text">
+
+			Message:
+			<input type="textarea">
+			<label for="how-heard">How did you hear about this website?</label>
+			<ul id="how-heard">
+				<li><input type="checkbox" id="google" name="how-heard" value="google"><label for="google">Google</label></li>
+				<li><input type="checkbox" id="friend" name="how-heard" value="friend"><label for="friend">A friend</label></li>
+				<li><input type="checkbox" id="other" name="how-heard" value="other"><label for="other">Other</label></li>
+			</ul>
+
+			<input type="submit">
+
+
+		</form>
+
+	</content>
+
+
+	<script src="about.js"></script>
+	<script>
+		document.getElementById("contact").addEventListener("submit", function(event) {
+			event.preventDefault(); 
+			alert("The form has been submitted successfully!"); 
+		});
+	</script>
+	<script>
+		var image = document.querySelector('img');
+	
+		image.addEventListener("mouseover", function() {
+			alert("Keep going, you got this!");
+		});
+	</script>
+
+
+</body>
+</html>

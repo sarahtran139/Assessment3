@@ -53,10 +53,11 @@ img {
 	background: url("https://wallpaperaccess.com/full/1614776.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
+	background-position: center;
   }
   
   h1 {
-	color: rgb(12, 8, 11);
+	color: rgb(226, 136, 204);
   }
   
   .skills li {
